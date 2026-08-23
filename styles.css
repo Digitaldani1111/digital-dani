@@ -266,6 +266,16 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--oxblood);outline-of
 @media (max-width:599px){.rename{grid-template-columns:1fr;gap:var(--s3);text-align:left}}
 .aside{border-left:2px solid var(--oxblood);padding-left:var(--s4);margin-top:var(--s5)}
 .aside p{font-size:17px;color:var(--ink);margin:0}
+.clist{list-style:none;margin:var(--s5) 0 0;padding:0;max-width:62ch}
+.clist li{border-top:1px solid rgba(34,37,42,.16);padding:var(--s4) 0;font-size:17px;color:var(--ink)}
+.clist li:last-child{border-bottom:1px solid rgba(34,37,42,.16)}
+.clist b{display:block;font-family:var(--display);font-weight:500;font-size:clamp(17px,1.9vw,20px);letter-spacing:-.012em;color:var(--graphite);margin-bottom:var(--s2)}
+.clist span{display:block;color:var(--mist);font-size:16px;margin-top:var(--s3)}
+.feature{border-top:1px solid var(--oxblood);border-bottom:1px solid var(--oxblood);padding:var(--s6) 0}
+.feature p{font-size:18px}
+.spike{display:block;font-family:var(--display);font-weight:600;font-size:clamp(56px,8vw,96px);letter-spacing:-.04em;line-height:.9;color:var(--oxblood);margin:var(--s5) 0}
+.spike small{display:block;font-family:var(--utility);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--mist);margin-top:var(--s3);line-height:1.5}
+.pull{font-family:var(--display);font-weight:500;font-size:clamp(22px,3vw,32px);line-height:1.2;letter-spacing:-.02em;color:var(--oxblood);max-width:18em;margin:var(--s5) 0 0}
 
 /* ---------- milestone chart ---------- */
 .loop{margin-top:var(--s6);position:relative}
