@@ -529,3 +529,55 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--oxblood);outline-of
 .aiblock img{width:100%;height:auto;display:block;border:1px solid rgba(34,37,42,.18)}
 .aiblock figcaption{font-family:var(--utility);font-size:11px;letter-spacing:.07em;
   text-transform:uppercase;color:var(--mist);margin-top:var(--s3)}
+
+/* hero: intro beside a colour portrait */
+.introgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,240px);
+  gap:var(--s6);align-items:start;margin-top:var(--s6)}
+.introgrid .intro{margin-top:0;max-width:54ch}
+.heroshot{width:100%;height:auto;display:block;aspect-ratio:4/5;object-fit:cover}
+@media (max-width:899px){
+  .introgrid{grid-template-columns:1fr;gap:var(--s5)}
+  .heroshot{max-width:200px}
+}
+
+/* ownership cards, two close stone tints so the set reads as steps
+   without dropping black slabs into a light page */
+.owned-item.alt{border-top:0;padding:var(--s4) var(--s5);margin-bottom:var(--s2);
+  border-left:2px solid rgba(113,32,47,.35)}
+.owned-item.alt:last-of-type{border-bottom:0}
+.owned-item.alt:nth-of-type(odd){background:#EAE7E0}
+.owned-item.alt:nth-of-type(even){background:#E2DED6;border-left-color:var(--oxblood)}
+.owned-item.alt h3{color:var(--graphite)}
+.owned-item.alt p{color:var(--mist)}
+.owned-item.alt .outcome{color:var(--oxblood)}
+
+/* contact is text only now the portrait sits in the hero */
+.contact{display:block;padding-bottom:clamp(64px,10vw,120px)}
+.contact .txt h2{margin-bottom:var(--s4)}
+
+/* ---------- case study deck ---------- */
+.deck{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s3);margin-top:var(--s4)}
+.csc{display:flex;flex-direction:column;text-decoration:none;color:inherit;
+  background:#EAE7E0;border-left:2px solid rgba(113,32,47,.35);
+  padding:var(--s4) var(--s5) var(--s5);
+  transition:background .18s ease,border-color .18s ease}
+.csc:nth-child(even){background:#E2DED6}
+.csc:hover{background:#DBD5CA;border-left-color:var(--oxblood)}
+.csc .n{font-family:var(--utility);font-size:11px;letter-spacing:.1em;color:var(--mist)}
+.csc h3{font-family:var(--display);font-weight:500;font-size:clamp(18px,2vw,22px);
+  line-height:1.22;letter-spacing:-.014em;margin:var(--s3) 0 var(--s2);color:var(--graphite)}
+.csc p{margin:0 0 var(--s4);font-size:15.5px;line-height:1.55;color:var(--mist);max-width:none}
+.csc .stat{font-family:var(--display);font-weight:600;font-size:clamp(19px,2.2vw,24px);
+  letter-spacing:-.022em;color:var(--oxblood);margin-top:auto}
+.csc .go{font-family:var(--utility);font-size:11px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--mist);margin-top:var(--s3)}
+.csc:hover .go{color:var(--oxblood)}
+@media (max-width:899px){.deck{grid-template-columns:1fr}}
+
+/* ---------- career bands side by side ---------- */
+.bands{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s6);align-items:start}
+.bands .band{margin-bottom:0}
+@media (max-width:899px){.bands{grid-template-columns:1fr;gap:var(--s5)}}
+
+/* stats bar reflows to whatever number of figures it holds */
+.stats{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
