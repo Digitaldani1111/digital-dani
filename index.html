@@ -1,28 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Dani</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: system-ui, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-    }
-    h1 { font-size: 3rem; }
-    p { color: #94a3b8; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Danielle Kartika, Digital Product and Experience</title>
+<meta name="description" content="Fifteen years agency side for global brands. Four years in house inside a regulated superannuation fund.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main style="text-align:center;">
-    <h1>Hello, World! 👋</h1>
-    <p>digitaldani.com.au</p>
-  </main>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="hdr">
+    <a class="wordmark" href="/">Danielle Kartika</a>
+    <nav aria-label="Main">
+      <ul>
+        <li class="menu-wrap">
+          <button class="navbtn" id="workbtn" aria-expanded="false" aria-controls="workmenu">Work</button>
+          <ul class="menu" id="workmenu" aria-labelledby="workbtn">
+            <li><a href="#">Member portal transformation<small>A month offline</small></a></li>
+            <li><a href="calculator.html">Super Calculator<small>Case study</small></a></li>
+          </ul>
+        </li>
+        <li><a class="navlink" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap">
+  <div class="spine" aria-hidden="true"></div>
+
+  <!-- HERO -->
+  <section id="hero" style="padding-top:clamp(64px,11vw,140px)">
+    <div class="col">
+      <h1>Danielle<br>Kartika</h1>
+      <p class="thesis">Microsoft. BMW. BPAY. Now the fund people retire on. Same discipline: make complicated things findable, usable and trusted.</p>
+      <p class="sub">Agency trained, in house accountable.</p>
+    </div>
+  </section>
+
+  <!-- CREDENTIAL -->
+  <section>
+    <div class="col">
+      <div class="band">
+        <p class="eyebrow">Agency, 2007 to 2021</p>
+        <h3>Fifteen years, agency side</h3>
+        <p class="brands">Microsoft <span>/</span> Hyundai <span>/</span> KIA <span>/</span> BMW <span>/</span> Mini <span>/</span> Mitsubishi <span>/</span> BPAY <span>/</span> OSKO <span>/</span> Government <span>/</span> TAL <span>/</span> REST Super <span>/</span> Sharesies</p>
+        <p>Pace, craft standards, briefing and directing specialists, and delivering to a client's commercial deadline.</p>
+      </div>
+
+      <div class="pivot" id="pivot">
+        <p>I can manage agencies because I've been the agency.</p>
+      </div>
+
+      <div class="band">
+        <p class="eyebrow">In house, 2021 to now</p>
+        <h3>Four years, in house</h3>
+        <p>Senior Digital Producer, superannuation. Regulatory constraint as a design input. Governance across marketing, technology, product, member services and compliance. Owning a platform after launch rather than handing it over.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OWNED -->
+  <section>
+    <div class="col">
+      <p class="eyebrow">Where I've led</p>
+      <h2>Making the case, then making it work</h2>
+
+      <div class="owned-item">
+        <h3>Carried a fund's members through a month with no portal</h3>
+        <p>Every member had to register again. As digital lead I gathered the insight, put up the recommendation, and took marketing, service and compliance with me before anything went out.</p>
+        <p class="outcome">Complaints held at normal levels across the whole blackout.</p>
+      </div>
+
+      <div class="owned-item">
+        <h3>Built somewhere for members to land while the door was shut</h3>
+        <p>Acquisition marketing was paused for months either side. People still arrived, so I made the case for somewhere to capture them and saw it through.</p>
+        <p class="outcome">Around 150 joined while the portal was dark.</p>
+      </div>
+
+      <div class="owned-item">
+        <h3>Replatformed a fund website from Kentico to Adobe Experience Manager</h3>
+        <p>Led content architecture, migration scope and agency delivery. The judgement call was what not to bring across.</p>
+        <p class="outcome"><span class="todo">Your number here</span></p>
+      </div>
+
+      <div class="owned-item">
+        <h3>Ran external agencies to fixed budgets and deadlines that could not move</h3>
+        <p>I brief agencies the way I wanted to be briefed when I was one. Tight scope, clear acceptance criteria, compliance constraints named up front.</p>
+        <p class="outcome"><span class="todo">Your number here</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPTH -->
+  <section>
+    <div class="col">
+      <p class="eyebrow">Depth</p>
+      <h2>What sits under the work</h2>
+      <div class="depth">
+        <div>
+          <h3>Content architecture</h3>
+          <p>Structured content, taxonomy and schema built so a page can be assembled, reused and governed rather than hand made each time.</p>
+        </div>
+        <div>
+          <h3>Search and answer engines</h3>
+          <p>Ranking was the old goal. Being the source that gets cited is the new one, and it needs different content structures. For a fund in a comparison heavy category, that is where members now ask their first question.</p>
+        </div>
+        <div>
+          <h3>Platforms</h3>
+          <p>Adobe Experience Manager and Kentico in production. HTML and CSS written by hand when the CMS gets in the way, which it does.</p>
+        </div>
+        <div>
+          <h3>Measurement</h3>
+          <p>Analytics set up so the question can actually be answered afterwards. Where that was missing, saying so plainly and fixing it next time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section>
+    <div class="col">
+      <p class="eyebrow">Selected work</p>
+      <h2>Case studies</h2>
+      <a class="work-row" href="#">
+        <span class="n">01</span>
+        <span class="t"><strong>Member portal transformation</strong><em>A month offline, without losing members</em></span>
+        <span class="arw">&rarr;</span>
+      </a>
+      <a class="work-row" href="calculator.html">
+        <span class="n">02</span>
+        <span class="t"><strong>Super Calculator</strong><em>The name was the barrier</em></span>
+        <span class="arw">&rarr;</span>
+      </a>
+      <a class="work-row soon" href="#">
+        <span class="n">03</span>
+        <span class="t"><strong>Service promise</strong><em>In production</em></span>
+        <span class="arw">&rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- RECORD -->
+  <section>
+    <div class="col">
+      <p class="eyebrow">Track record</p>
+      <h2>Fifteen years, in order</h2>
+      <dl class="rec">
+        <dt>2021 to now</dt>
+        <dd>Senior Digital Producer, superannuation<span>Website, member portal content, campaign delivery, SEO</span></dd>
+        <dt>2007 to 2021</dt>
+        <dd>Agency side, BMF Advertising and others<span>Microsoft, Hyundai, KIA, BMW, Mini, Mitsubishi, BPAY, OSKO, Government, TAL, REST Super, Sharesies</span></dd>
+      </dl>
+      <div class="platforms">
+        <p class="eyebrow">Platforms</p>
+        <p>Adobe Experience Manager <span>/</span> Kentico <span>/</span> GA4 <span>/</span> Adobe Analytics <span>/</span> HTML email <span>/</span> Schema <span>/</span> Figma</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="col contact">
+      <img src="assets/portrait-duotone.jpg" alt="Danielle Kartika" width="320" height="400">
+      <div class="txt">
+        <h2>Let's talk.</h2>
+        <ul>
+          <li><a href="mailto:hello@dkartika.com">hello@dkartika.com</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+
+<script src="menu.js"></script>
 </body>
 </html>
